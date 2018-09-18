@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harvard Art Museums Galleries</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="index.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="title">Harvard Art Museums</h1>
+            </div>
+            
+            <div id="all-galleries">
+                <h2>Galleries</h2>
+                <ul id="galleries">
+                </ul>
+            </div>
+            <div id="all-objects" style="display:none">
+                <h2>Gallery Objects</h2>
+                <table id="gallery-objs" class="table table-striped">
+                    <thead>
+                        <th>Title</th> <th>Image</th> <th>URL</th> <th>People</th> <th>More Information</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button onclick="backToGalleries()" class="btn btn-primary btn-lg btn-block back-btn">Back to Galleries</button>
+            </div>
+            <div id="img-details" style="display:none">
+                <h2>Image Details</h2>
+                <div id="img-div">
+                </div>
+                <button onclick="backToGalleryObjs()" class="btn btn-primary btn-lg btn-block back-btn">Back to Gallery Objects</button>
+            </div>
+        </div>
+    </body>
+</html>
